@@ -1,10 +1,10 @@
-class Configuration(){
+class Configuration{
     String[] properties;
     public Configuration(){
         properties = loadStrings("configuration.txt");
     }
-    publis String getProperty(String key){
-        for(String properties : property){
+    public String getProperty(String key){
+        for(String property : properties){
             if(property.split("=")[0].equals(key)){
                 return property.split("=")[1];
             }
